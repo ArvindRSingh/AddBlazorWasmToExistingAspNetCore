@@ -1,3 +1,4 @@
+using BlazorWasm;
 using ExistingWebApplication.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -30,18 +31,19 @@ else
 
 app.MapWhen(ctx => ctx.Request.Path.StartsWithSegments("/clientapp"), app1 =>
 {
+    
     app1.UseBlazorFrameworkFiles("/clientapp");
     app1.UseRouting();
     app1.UseEndpoints(endpoints =>
     {
         //endpoints.MapControllers();
-        endpoints.MapFallbackToFile("/clientapp/{*path:nonfile}", "/clientapp/index.html");
+        endpoints.MapFallbackToFile("/{*path:nonfile}", "/index.html");
     });
-    //app1.UsePathBase("/clientapp");
-    app1.UseStaticFiles();
-    app1.UseStaticFiles("/clientapp");
+    app1.UsePathBase("/clientapp");
+    app1.UseStaticFiles("");
 });
-
+app.UseWebAssemblyDebugging();
+app.MapFallbackToFile("index.html");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
