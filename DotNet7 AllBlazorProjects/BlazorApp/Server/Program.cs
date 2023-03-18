@@ -46,11 +46,11 @@ app.MapWhen(ctx => ctx.Request.Path.StartsWithSegments("/clientapp"), app1 =>
     app1.UseEndpoints(endpoints =>
     {
         //endpoints.MapControllers();
-        endpoints.MapFallbackToFile("/{*path:nonfile}", "/index.html");
+        endpoints.MapFallbackToFile("/clientapp/{*path:nonfile}", "/clientapp/index.html");
     });
     //app1.UsePathBase("/clientapp");
-    app1.UseStaticFiles();
-
+    //app1.UseStaticFiles();
+    app1.UseStaticFiles("/clientapp");
 });
 
 
