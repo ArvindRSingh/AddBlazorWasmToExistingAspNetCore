@@ -19,11 +19,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExistingAspNetWebApp", "Dot
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet7 AllBlazorProjects", "DotNet7 AllBlazorProjects", "{3B7D1BBC-D287-4401-84D9-5A393E4CD53B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.Server", "DotNet7 AllBlazorProjects\BlazorApp\Server\BlazorApp.Server.csproj", "{6D548557-9152-40B5-A7CD-9D52EF6ED95E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Server", "DotNet7 AllBlazorProjects\BlazorApp\Server\BlazorApp.Server.csproj", "{6D548557-9152-40B5-A7CD-9D52EF6ED95E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.Client", "DotNet7 AllBlazorProjects\BlazorApp\Client\BlazorApp.Client.csproj", "{12FD9613-E83E-4751-9243-B289CF902CD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Client", "DotNet7 AllBlazorProjects\BlazorApp\Client\BlazorApp.Client.csproj", "{12FD9613-E83E-4751-9243-B289CF902CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp.Shared", "DotNet7 AllBlazorProjects\BlazorApp\Shared\BlazorApp.Shared.csproj", "{5A757B62-119D-4EE4-8296-7AF37661BE9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp.Shared", "DotNet7 AllBlazorProjects\BlazorApp\Shared\BlazorApp.Shared.csproj", "{5A757B62-119D-4EE4-8296-7AF37661BE9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet7MVC", "DotNet7MVC", "{59CE70DF-D7EA-4786-8371-2AC85189E024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "DotNet7MVC\WebApplication1\WebApplication1.csproj", "{3E767307-A540-4C3D-914B-FC1C7A1E1474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp-empty2.Server", "DotNet7MVC\BlazorApp-empty2\Server\BlazorApp-empty2.Server.csproj", "{D6EECDE3-4171-4292-99E3-2B0125AEFB9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp-empty2.Client", "DotNet7MVC\BlazorApp-empty2\Client\BlazorApp-empty2.Client.csproj", "{10C24D6F-EF78-4115-812B-A4876FB7F13D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp-empty2.Shared", "DotNet7MVC\BlazorApp-empty2\Shared\BlazorApp-empty2.Shared.csproj", "{1C8F4778-56AE-4EF8-8AD6-6D5FF6414878}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet7Api", "DotNet7Api", "{395C640B-F011-49CF-BE9A-C3665A3DEF20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +75,22 @@ Global
 		{5A757B62-119D-4EE4-8296-7AF37661BE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A757B62-119D-4EE4-8296-7AF37661BE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A757B62-119D-4EE4-8296-7AF37661BE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E767307-A540-4C3D-914B-FC1C7A1E1474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E767307-A540-4C3D-914B-FC1C7A1E1474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E767307-A540-4C3D-914B-FC1C7A1E1474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E767307-A540-4C3D-914B-FC1C7A1E1474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EECDE3-4171-4292-99E3-2B0125AEFB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EECDE3-4171-4292-99E3-2B0125AEFB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EECDE3-4171-4292-99E3-2B0125AEFB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EECDE3-4171-4292-99E3-2B0125AEFB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C24D6F-EF78-4115-812B-A4876FB7F13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C24D6F-EF78-4115-812B-A4876FB7F13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C24D6F-EF78-4115-812B-A4876FB7F13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C24D6F-EF78-4115-812B-A4876FB7F13D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8F4778-56AE-4EF8-8AD6-6D5FF6414878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8F4778-56AE-4EF8-8AD6-6D5FF6414878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8F4778-56AE-4EF8-8AD6-6D5FF6414878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8F4778-56AE-4EF8-8AD6-6D5FF6414878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +104,10 @@ Global
 		{6D548557-9152-40B5-A7CD-9D52EF6ED95E} = {3B7D1BBC-D287-4401-84D9-5A393E4CD53B}
 		{12FD9613-E83E-4751-9243-B289CF902CD9} = {3B7D1BBC-D287-4401-84D9-5A393E4CD53B}
 		{5A757B62-119D-4EE4-8296-7AF37661BE9B} = {3B7D1BBC-D287-4401-84D9-5A393E4CD53B}
+		{3E767307-A540-4C3D-914B-FC1C7A1E1474} = {59CE70DF-D7EA-4786-8371-2AC85189E024}
+		{D6EECDE3-4171-4292-99E3-2B0125AEFB9B} = {59CE70DF-D7EA-4786-8371-2AC85189E024}
+		{10C24D6F-EF78-4115-812B-A4876FB7F13D} = {59CE70DF-D7EA-4786-8371-2AC85189E024}
+		{1C8F4778-56AE-4EF8-8AD6-6D5FF6414878} = {59CE70DF-D7EA-4786-8371-2AC85189E024}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9343DF0-D17A-4D25-8F75-5C3B22F54FA0}
