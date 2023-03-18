@@ -39,6 +39,21 @@ else
     app.UseHsts();
 }
 
+app.MapWhen(ctx => ctx.Request.Path.StartsWithSegments("/clientapp"), app1 =>
+{
+    app1.UseBlazorFrameworkFiles("/clientapp");
+    app1.UseRouting();
+    app1.UseEndpoints(endpoints =>
+    {
+        //endpoints.MapControllers();
+        endpoints.MapFallbackToFile("/{*path:nonfile}", "/index.html");
+    });
+    //app1.UsePathBase("/clientapp");
+    app1.UseStaticFiles();
+
+});
+
+
 app.UseHttpsRedirection();
 
 app.UseBlazorFrameworkFiles();

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp3.Client", "DotNet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasm", "DotNet7\BlazorWasm\BlazorWasm.csproj", "{427844EE-9C3F-41F1-8463-6CBED54E9C9C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExistingWebApplication", "DotNet7\ExistingWebApplication\ExistingWebApplication.csproj", "{65667F4F-31C6-49D9-B561-B6C42C41B70F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExistingAspNetWebApp", "DotNet7\ExistingWebApplication\ExistingAspNetWebApp.csproj", "{65667F4F-31C6-49D9-B561-B6C42C41B70F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNet7 AllBlazorProjects", "DotNet7 AllBlazorProjects", "{3B7D1BBC-D287-4401-84D9-5A393E4CD53B}"
 EndProject
